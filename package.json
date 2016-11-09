@@ -1,0 +1,32 @@
+{
+    "name": "mduve",
+    "version": "0.0.1",
+    "author": "Michael Duve",
+    "email": "mduve@designmail.net",
+    "description": "work of Michael Duve",
+    "homepage": "http://mduve.de",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/dazlious/mduve.devdone"
+    },
+    "keywords": [
+        "webdesign",
+        "portfolio",
+        "web development",
+        "work"
+    ],
+    "engines": {
+        "node": "6.2.1",
+        "npm": "3.9.3"
+    },
+    "devDependencies": {
+        "autoprefixer": "6.4.1",
+        "cssnano": "3.8.0",
+        "grunt": "1.0.1",
+        "grunt-contrib-pug": "1.0.0",
+        "grunt-contrib-sass": "1.0.0",
+        "grunt-contrib-watch": "1.0.0",
+        "grunt-postcss": "0.8.0"
+    },
+    "dependencies": {}
+}
