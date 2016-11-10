@@ -1,0 +1,28 @@
+-
+    projects = [{
+        name: "Lorem ipsum 1",
+        date: "12/2006",
+        description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        anchor: {
+            href: "http://google.de",
+            text: "google"
+            }
+        }, {
+        name: "Lorem ipsum 2",
+        date: "01/2012",
+        description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        anchor: {
+            href: "http://google.de",
+            text: "google"
+            }
+        }]
+
+article.work
+    h2 projects
+    ul.entrylist
+        each project in projects
+            li.entrylist__entry
+                time.entrylist__entry-date= project.date
+                h3.entrylist__entry-heading= project.name
+                p.entrylist__entry-description= project.description
+                a.entrylist__entry-anchor(href=project.anchor.href) More information about #{project.anchor.text}

@@ -1,0 +1,40 @@
+.entrylist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    &__entry {
+        position: relative;
+        margin: 0 0 0 $gutter;
+        padding: ($gutter*3) 0 ($gutter*6) ($gutter*2);
+        border-left: 1px solid map-get($colors, light);
+        &:before {
+            position: absolute;
+            left: -(($timeline-circle/2) + ($gutter/2));
+            top: -(($timeline-circle/2) + ($gutter/2));
+            content: '';
+            width: $timeline-circle;
+            height: $timeline-circle;
+            border-radius: 100%;
+            background-color: map-get($colors, lightest);
+            border: ($gutter/2) solid map-get($colors, highlight);
+        }
+        &-date {
+            position: absolute;
+            left: ($gutter*2);
+            top: -($gutter);
+            margin: 0;
+            padding: 0;
+        }
+        &-heading {
+            margin: 0;
+            padding: 0;
+        }
+        &-description {
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+        }
+        &-anchor {
+        }
+    }
+}

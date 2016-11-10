@@ -1,6 +1,35 @@
+@import 'settings';
+
 body {
     margin: 0;
     * {
         box-sizing: border-box;
     }
+}
+
+a,
+a:visited,
+a:link {
+    color: currentColor;
+}
+
+a:hover {
+    color: map-get($colors, highlight);
+}
+
+.wrapper {
+    margin: 0 ($gutter * 2);
+    font:  {
+        family: map-get($font, 'family');
+        weight: 400;
+        size: 17px;
+    }
+    line-height: 1.4;
+}
+
+@import 'entrylist';
+
+::selection {
+    color: map-get($colors, lightest);
+    background: map-get($colors, highlight);
 }
