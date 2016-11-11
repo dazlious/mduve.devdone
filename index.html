@@ -33,25 +33,74 @@
   <body>
     <main class="wrapper">
       <h1>A Web Frontend Developer's work</h1>
-      <header>
-        <h2>profile</h2>
+      <header class="profile">
+        <h2 class="profile__heading">profile</h2>
       </header>
+      <svg height="0" width="0">
+        <defs>
+          <clipPath id="svgPath" clipPathUnits="objectBoundingBox">
+            <polygon points="-0.03225806451612903 0, -0.06451612903225806 1, 0.03225806451612903 1, 0.06451612903225806 0"></polygon>
+            <polygon points="0.06774193548387097 0, 0.03548387096774194 1, 0.13225806451612904 1, 0.16451612903225807 0"></polygon>
+            <polygon points="0.16774193548387098 0, 0.13548387096774195 1, 0.23225806451612904 1, 0.2645161290322581 0"></polygon>
+            <polygon points="0.26774193548387093 0, 0.23548387096774193 1, 0.33225806451612905 1, 0.36451612903225805 0"></polygon>
+            <polygon points="0.367741935483871 0, 0.33548387096774196 1, 0.432258064516129 1, 0.4645161290322581 0"></polygon>
+            <polygon points="0.467741935483871 0, 0.43548387096774194 1, 0.532258064516129 1, 0.564516129032258 0"></polygon>
+            <polygon points="0.567741935483871 0, 0.5354838709677419 1, 0.632258064516129 1, 0.6645161290322581 0"></polygon>
+            <polygon points="0.667741935483871 0, 0.635483870967742 1, 0.732258064516129 1, 0.764516129032258 0"></polygon>
+            <polygon points="0.767741935483871 0, 0.735483870967742 1, 0.832258064516129 1, 0.864516129032258 0"></polygon>
+            <polygon points="0.867741935483871 0, 0.8354838709677419 1, 0.932258064516129 1, 0.9645161290322581 0"></polygon>
+            <polygon points="0.967741935483871 0, 0.935483870967742 1, 1.032258064516129 1, 1.064516129032258 0"></polygon>
+          </clipPath>
+        </defs>
+      </svg>
       <article class="work">
         <h2>projects</h2>
         <ul class="entrylist">
           <li class="entrylist__entry">
             <time class="entrylist__entry-date">12/2006</time>
-            <h3 class="entrylist__entry-heading">Lorem ipsum 1</h3>
-            <p class="entrylist__entry-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><a class="entrylist__entry-anchor" href="http://google.de">More information about google</a>
+            <h3 class="entrylist__entry-heading">Lorem ipsum 1</h3><img class="entrylist__entry-image" src="http://dummyimage.com/768x250/333" alt="Lorem">
+            <p class="entrylist__entry-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <p class="entrylist__entry-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <p></p>&#8627; More information about&nbsp;<a class="entrylist__entry-anchor" href="http://google.de">google</a>
           </li>
           <li class="entrylist__entry">
             <time class="entrylist__entry-date">01/2012</time>
             <h3 class="entrylist__entry-heading">Lorem ipsum 2</h3>
-            <p class="entrylist__entry-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><a class="entrylist__entry-anchor" href="http://google.de">More information about google</a>
+            <p class="entrylist__entry-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <p></p>&#8627; More information about&nbsp;<a class="entrylist__entry-anchor" href="http://google.de">google</a>
           </li>
         </ul>
       </article>
-      <footer></footer>
     </main>
+    <footer class="imprint">
+      <div class="imprint__body">
+        <p class="imprint__body-main-heading"><strong>imprint</strong></p>
+        <p class="imprint__body-text">Angaben gemäß § 5 TMG</p>
+        <div class="imprint__body-vcard vcard"><span class="fn">Michael Duve,&nbsp;</span><a class="email" href="mailto:mduve@designmail.net">mduve@designmail.net</a>
+          <div class="adr">
+            <div class="street-address">Eisackstrasse 39,&nbsp;<span class="locality">Berlin,&nbsp;</span><span class="postal-code">10827&nbsp;</span><span class="country-name">Deutschland</span></div>
+            <div class="tel">+49 (0)176 63 62 67 27</div>
+          </div>
+        </div>
+        <p class="imprint__body-heading"><strong>Haftung für Inhalte</strong></p>
+        <p class="imprint__body-text">Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+        <p class="imprint__body-heading"><strong>Haftung für Links</strong></p>
+        <p class="imprint__body-text">Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+        <p class="imprint__body-heading"><strong>Urheberrecht</strong></p>
+        <p class="imprint__body-text">Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+        <p class="imprint__body-heading"><strong>Datenschutz</strong></p>
+        <p class="imprint__body-text">Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.</p>
+        <p class="imprint__body-text">Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
+        <p class="imprint__body-text">Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.</p>
+        <p class="imprint__body-heading"><strong>Google Analytics</strong></p>
+        <p class="imprint__body-text">Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (''Google''). Google Analytics verwendet sog. ''Cookies'', Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglicht. Die durch den Cookie erzeugten Informationen über Ihre Benutzung diese Website (einschließlich Ihrer IP-Adresse) wird an einen Server von Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten für die Websitebetreiber zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Sie können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.</p>
+        <p class="imprint__body-text">Das Impressum dieser Homepage wurde mit dem&nbsp;<a href="http://www.impressum-generator.de/">Impressum Generator</a>&nbsp;der&nbsp;<a href="http://www.kanzlei-hasselbach.de">Kanzlei Hasselbach</a>&nbsp;erstellt</p>
+      </div>
+    </footer>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-87245235-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>

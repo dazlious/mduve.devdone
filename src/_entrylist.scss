@@ -7,6 +7,12 @@
         margin: 0 0 0 $gutter;
         padding: ($gutter*3) 0 ($gutter*6) ($gutter*2);
         border-left: 1px solid map-get($colors, light);
+        &:last-child {
+            padding-bottom: 0;
+            &:after {
+                border-bottom-color: transparent;
+            }
+        }
         &:before {
             position: absolute;
             left: -(($timeline-circle/2) + ($gutter/2));
@@ -18,23 +24,41 @@
             background-color: map-get($colors, lightest);
             border: ($gutter/2) solid map-get($colors, highlight);
         }
+        &:after {
+            margin-top: ($gutter*3);
+            content: '';
+            border-bottom: 1px solid map-get($colors, light);
+            display: block;
+        }
+        > a {
+            color: map-get($colors, highlight);
+        }
         &-date {
             position: absolute;
-            left: ($gutter*2);
+            right: 0;
             top: -($gutter);
             margin: 0;
             padding: 0;
+            font-style: italic;
         }
         &-heading {
-            margin: 0;
+            margin: 0 0 $gutter 0;
             padding: 0;
         }
+        &-image {
+            display: block;
+            width: 100%;
+            margin: 0 0 $gutter 0;
+            padding: 0;
+            clip-path: url(#svgPath);
+        }
         &-description {
-            margin: 0;
+            margin: 0 0 $gutter 0;
             padding: 0;
             text-align: justify;
         }
         &-anchor {
+            margin-top: $gutter;
         }
     }
 }

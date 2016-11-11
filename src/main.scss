@@ -8,8 +8,7 @@ body {
 }
 
 a,
-a:visited,
-a:link {
+a:visited {
     color: currentColor;
 }
 
@@ -17,8 +16,21 @@ a:hover {
     color: map-get($colors, highlight);
 }
 
+.nocontent {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
 .wrapper {
-    margin: 0 ($gutter * 2);
+    margin: 0 auto;
+    padding: 0 ($gutter*2);
+    max-width: map-get($breakpoints, mid);
     font:  {
         family: map-get($font, 'family');
         weight: 400;
@@ -28,6 +40,7 @@ a:hover {
 }
 
 @import 'entrylist';
+@import 'imprint';
 
 ::selection {
     color: map-get($colors, lightest);

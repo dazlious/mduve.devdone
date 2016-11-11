@@ -1,0 +1,23 @@
+.imprint {
+    width: 100%;
+    padding: ($gutter*2) 0;
+    color: map-get($colors, dark);
+    text-align: center;
+    background: map-get($colors, light);
+    &__body {
+        max-width: map-get($breakpoints, mid);
+        min-width: 280px;
+        margin: 0 auto;
+        &-text {
+            font-size: .8em;
+            margin-top: $gutter/2;
+        }
+        &-heading {
+            font-size: 1em;
+            margin-bottom: $gutter/2;
+        }
+        &-main-heading {
+            font-size: 1.6em;
+        }
+    }
+}
