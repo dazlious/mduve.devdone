@@ -12,6 +12,15 @@ module.exports = function(grunt) {
             },
             src: {
                 src: 'css/*.css'
+            },
+            nano: {
+                options: {
+                    map: false,
+                    processors: [
+                        require('cssnano')
+                    ]
+                },
+                src: 'css/crp.css'
             }
         },
         sass: {
@@ -53,6 +62,16 @@ module.exports = function(grunt) {
                     dest: 'img/dist/'
                 }]
             }
+        },
+        penthouse: {
+            crp: {
+                outfile: './css/crp.css',
+                css: './css/main.css',
+                url: 'http://localhost',
+                width: 820,
+                height: 900,
+                skipErrors: false
+            }
         }
     });
 
@@ -62,10 +81,14 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-newer');
+    grunt.loadNpmTasks('grunt-penthouse');
 
     grunt.registerTask('default', []);
     grunt.registerTask('minifiyImg', ['newer:imagemin:dynamic']);
+    grunt.registerTask('crp', ['penthouse:crp', 'postcss:nano']);
+
     grunt.registerTask('compile', ['pug:src', 'sass:src', 'postcss:src', 'minifiyImg']);
     grunt.registerTask('dev', ['watch:src']);
+    grunt.registerTask('ship', ['compile', 'crp']);
 
 };

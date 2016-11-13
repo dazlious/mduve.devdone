@@ -6,7 +6,7 @@
     "element-case": "lower",
     "eof-newline": false,
     "leading-zero": false,
-    "quotes": "single",
+    "quotes": "double",
     "sort-order-fallback": "abc",
     "space-before-colon": "",
     "space-after-colon": " ",

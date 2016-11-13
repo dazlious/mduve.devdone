@@ -1,4 +1,4 @@
-@import 'settings';
+@import "settings";
 
 body {
     margin: 0;
@@ -32,16 +32,16 @@ a:hover {
     padding: 0 ($gutter*2);
     max-width: map-get($breakpoints, mid);
     font:  {
-        family: map-get($font, 'family');
+        family: map-get($font, "family");
         weight: 400;
         size: 17px;
     }
     line-height: 1.4;
 }
 
-@import 'projects';
-@import 'entrylist';
-@import 'imprint';
+@import "projects";
+@import "entrylist";
+@import "imprint";
 
 ::selection {
     color: map-get($colors, lightest);

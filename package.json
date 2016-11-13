@@ -28,6 +28,7 @@
     "grunt-contrib-sass": "1.0.0",
     "grunt-contrib-watch": "1.0.0",
     "grunt-newer": "1.2.0",
+    "grunt-penthouse": "0.3.0",
     "grunt-postcss": "0.8.0"
   },
   "dependencies": {}
