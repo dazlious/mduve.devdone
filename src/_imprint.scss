@@ -1,10 +1,11 @@
 .imprint {
     width: 100%;
-    padding: ($gutter*2) 0;
+    padding: ($gutter*2);
     color: map-get($colors, medium);
     text-align: center;
     background: map-get($colors, light);
     box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, .15);
+    font-family: map-get($font, family);
     &__body {
         max-width: map-get($breakpoints, mid);
         min-width: 280px;

@@ -1,15 +1,5 @@
 include entries
 
-- var parts = 10
-- var width = (1/parts) / 1.55
-
-svg.nocontent(height="0", width="0")
-    defs
-        clipPath#svgPath(clipPathUnits="objectBoundingBox")
-            - for (var i = 0; i <= parts; i++) {
-                polygon(points=(i/parts-(width/2))+" 0, "+(i/parts-(width))+" 1, "+(i/parts+(width/2))+" 1, "+(i/parts+(width))+" 0")
-            - }
-
 article.projects
     h2.projects__heading projects
     p.projects__description Some projects are still under development, some are offline and some are deprecated by the time.
@@ -31,4 +21,4 @@ article.projects
                 if project.anchor
                     p
                     | &#8627; More information about&nbsp;
-                    a.entrylist__entry-anchor(href=project.anchor.href, target="_new") #{project.anchor.text}
+                    a.entrylist__entry-anchor(href=project.anchor.href, target="_blank") #{project.anchor.text}
