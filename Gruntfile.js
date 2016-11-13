@@ -40,6 +40,19 @@ module.exports = function(grunt) {
                 files: ['src/**/*.scss', 'src/**/*.pug'],
                 tasks: ['compile']
             }
+        },
+        imagemin: {
+            dynamic: {
+                options: {
+                    optimizationLevel: 4
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'img/src/',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'img/dist/'
+                }]
+            }
         }
     });
 
@@ -47,10 +60,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-pug');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-newer');
 
     grunt.registerTask('default', []);
-    grunt.registerTask('compile', ['pug:src', 'sass:src', 'postcss:src']);
+    grunt.registerTask('minifiyImg', ['newer:imagemin:dynamic']);
+    grunt.registerTask('compile', ['pug:src', 'sass:src', 'postcss:src', 'minifiyImg']);
     grunt.registerTask('dev', ['watch:src']);
-
 
 };

@@ -1,12 +1,12 @@
 .entrylist {
     list-style: none;
-    margin: 0;
+    margin: ($gutter*4) 0 0;
     padding: 0;
     &__entry {
         position: relative;
         margin: 0 0 0 $gutter;
         padding: ($gutter*3) 0 ($gutter*6) ($gutter*2);
-        border-left: 1px solid map-get($colors, light);
+        border-left: $timeline-thickness solid map-get($colors, light);
         &:last-child {
             padding-bottom: 0;
             &:after {
@@ -15,7 +15,7 @@
         }
         &:before {
             position: absolute;
-            left: -(($timeline-circle/2) + ($gutter/2));
+            left: -(($timeline-circle/2) + ($gutter/2) + ($timeline-thickness/2));
             top: -(($timeline-circle/2) + ($gutter/2));
             content: '';
             width: $timeline-circle;
@@ -27,7 +27,7 @@
         &:after {
             margin-top: ($gutter*3);
             content: '';
-            border-bottom: 1px solid map-get($colors, light);
+            border-bottom: ($timeline-thickness/2) solid map-get($colors, light);
             display: block;
         }
         > a {
@@ -35,22 +35,50 @@
         }
         &-date {
             position: absolute;
-            right: 0;
-            top: -($gutter);
+            left: (2*$gutter);
+            top: -($gutter + 2px);
             margin: 0;
             padding: 0;
-            font-style: italic;
+            font-weight: 700;
+            color: map-get($colors, highlight);
         }
         &-heading {
             margin: 0 0 $gutter 0;
             padding: 0;
         }
         &-image {
-            display: block;
-            width: 100%;
             margin: 0 0 $gutter 0;
             padding: 0;
-            clip-path: url(#svgPath);
+            &-caption {
+                font-size: .8em;
+                margin: ($gutter/2) 0 ($gutter) 0;
+                color: map-get($colors, medium);
+                &:before {
+                    content: 'Source: ';
+                }
+            }
+            img {
+                display: block;
+                width: 100%;
+                clip-path: url(#svgPath);
+                filter: saturate(.3);
+            }
+        }
+        &-video {
+            position: relative;
+            display: block;
+            height: 0;
+            padding: 0;
+            overflow: hidden;
+            iframe {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
         }
         &-description {
             margin: 0 0 $gutter 0;
