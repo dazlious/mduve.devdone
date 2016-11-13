@@ -11,7 +11,10 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="robots" content="index,follow,noarchive">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+    </noscript>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -43,22 +46,24 @@
           <li class="entrylist__entry">
             <time class="entrylist__entry-date">2016</time>
             <h3 class="entrylist__entry-heading">AutoTilingTexturer (still in progress)</h3>
-            <p class="entrylist__entry-description">An implementation of an auto tiling algorithm in node.js</p>
+            <p class="entrylist__entry-description">An implementation of an auto tiling algorithm in node.js.</p>
             <p class="entrylist__entry-description">The task of the algorithm is to create a map with textures based on a 2D bitmap. Each pixel on the bitmap corresponds to a texture. The main task is the recognition of edges and corners, as well as the transitions of different textures.</p>
             <p></p>&#8627; More information about&nbsp;<a class="entrylist__entry-anchor" href="https://github.com/dazlious/AutoTilingTexturer" target="_blank">AutoTilingTexturer on github</a>
           </li>
           <li class="entrylist__entry">
             <time class="entrylist__entry-date">2016</time>
-            <h3 class="entrylist__entry-heading">MappedJS - Authoring and illustration of infographical maps</h3>
+            <h3 class="entrylist__entry-heading">MappedJS – Authoring and illustration of infographical maps</h3>
             <figure class="entrylist__entry-image"><img src="./img/dist/mjs.jpg" alt="MappedJS: Authoring and illustration of infographical maps on the web">
             </figure>
-            <p class="entrylist__entry-description">Implementation of my Bachelor thesis entitled 'Authoring and illustration of infographical maps on the web'.</p>
+            <p class="entrylist__entry-description">Project for my Bachelor thesis entitled 'Authoring and illustration of infographical maps on the web'.</p>
+            <p class="entrylist__entry-description">MappedJS is a JavaScript library for displaying 2D-bitmap images as an interactive map in a browser. Furthermore marker, labels and some neat features are implemented, yet.</p>
+            <p class="entrylist__entry-description">MappedJS has also an application written with Electron, which enables people without programming knowledge to create beautiful maps.</p>
             <p></p>&#8627; More information about&nbsp;<a class="entrylist__entry-anchor" href="http://mappedjs.de" target="_blank">MappedJS</a>
           </li>
           <li class="entrylist__entry">
             <time class="entrylist__entry-date">2016</time>
             <h3 class="entrylist__entry-heading">ImageSlicer</h3>
-            <p class="entrylist__entry-description">Implementing an algorithm in Python to divide a large image into many small tiles.</p>
+            <p class="entrylist__entry-description">A tiny algorithm written in Python to divide a large image into many small tiles. A large amount of options can be set.</p>
             <p></p>&#8627; More information about&nbsp;<a class="entrylist__entry-anchor" href="https://github.com/MappedJS/mjs-imageslicer" target="_blank">ImageSlicer on github</a>
           </li>
           <li class="entrylist__entry">
@@ -76,7 +81,7 @@
             <figure class="entrylist__entry-image"><img src="./img/dist/nobelprize.jpg" alt="Screenshot of Nobel prize AniSort">
               <figcaption class="entrylist__entry-image-caption">BILD.de, http://www.bild.de/short/sti-43726740.bild.html</figcaption>
             </figure>
-            <p class="entrylist__entry-description">This project is a modular JavaScript plug-in, which enables the discovery and presentation of sortable data. Data can additionally be searched, filtered and explored in a detailed view.</p>
+            <p class="entrylist__entry-description">This project is a modular JavaScript plugin, which enables the discovery and presentation of sortable data. Data can additionally be searched, filtered and explored in a detailed view.</p>
             <p></p>&#8627; More information about&nbsp;<a class="entrylist__entry-anchor" href="http://www.bild.de/staticdata/infobild/2014_2/production/anisort/20151202-nobelpreistraeger-new/build/index.html" target="_blank">Nobel prize AniSort at BILD.de</a>
           </li>
           <li class="entrylist__entry">
@@ -94,13 +99,13 @@
             <figure class="entrylist__entry-image"><img src="./img/dist/boenisch.jpg" alt="Screenshot of Peter Boenisch Fellowship">
               <figcaption class="entrylist__entry-image-caption">BILD.de, https://www.peterboenisch.de</figcaption>
             </figure>
-            <p class="entrylist__entry-description">On the occasion of the 10th anniversary of Peter Boenisch's death, a scholarship was created, which gives journalists the opportunity to create a report about any topic.</p>
+            <p class="entrylist__entry-description">On the occasion of the 10th anniversary of Peter Boenisch's death, a scholarship was introduced, which gives journalists the opportunity to create a report about any topic.</p>
             <p class="entrylist__entry-description">A standalone website was created, so interested journalists would be able to apply for the program.</p>
             <p></p>&#8627; More information about&nbsp;<a class="entrylist__entry-anchor" href="https://www.peterboenisch.de/" target="_blank">Peter Boenisch Fellowship</a>
           </li>
           <li class="entrylist__entry">
             <time class="entrylist__entry-date">2014</time>
-            <h3 class="entrylist__entry-heading">videoChop - slice.compose.online</h3>
+            <h3 class="entrylist__entry-heading">videoChop – slice.compose.online</h3>
             <figure class="entrylist__entry-image"><img src="./img/dist/videochop.jpg" alt="Screenshot of videochop.de">
             </figure>
             <p class="entrylist__entry-description">Implementation of a clientside video editing web application with two fellow students within one semester, using modern web technologies. To compose a video in a webworker thread, Emscripten was used to convert ffmpeg to JavaScript.</p>
@@ -122,7 +127,7 @@
               <figcaption class="entrylist__entry-image-caption">BILD.de, http://www.bild.de/short/sti-38984690.bild.html</figcaption>
             </figure>
             <p class="entrylist__entry-description">An interactive report about the tsunami hitting Thailand's coast in 2004.</p>
-            <p class="entrylist__entry-description">The storytelling consists of several images and a tool called 'before-after', where two images can be interactivly compared by controlling a slider.</p>
+            <p class="entrylist__entry-description">The storytelling consists of several images and a tool called 'before-after', where two images can be interactively compared by controlling a slider.</p>
             <p></p>&#8627; More information about&nbsp;<a class="entrylist__entry-anchor" href="http://www.bild.de/bild-plus/storytelling/topics/tsunami/tsunami-10-jahre-danach-38984690.bild.html" target="_blank">Storytelling - Tsunami at BILDplus</a>
           </li>
           <li class="entrylist__entry">
@@ -131,7 +136,7 @@
             <figure class="entrylist__entry-image"><img src="./img/dist/wki.jpg" alt="Teaser of World War I from BILD.de">
               <figcaption class="entrylist__entry-image-caption">BILD.de, http://www.bild.de/short/sti-37037790.bild.html</figcaption>
             </figure>
-            <p class="entrylist__entry-description">Fritz Rümmelein, a lieutenant in World War I, leaves letters, diaries and maps from this period behind. These pieces of information were published in a book by Ralf Georg Reuth.</p>
+            <p class="entrylist__entry-description">Fritz Rümmelein, a lieutenant in World War I, leaves letters, diaries, and maps from this period behind. The pieces of information were published in a book by Ralf Georg Reuth.</p>
             <p class="entrylist__entry-description">The whole story of the lieutenant is told in eight chapters, enriched with countless pictures and maps.</p>
             <p></p>&#8627; More information about&nbsp;<a class="entrylist__entry-anchor" href="http://www.bild.de/short/sti-37037790.bild.html" target="_blank">World War I at BILD.de</a>
           </li>
@@ -141,7 +146,7 @@
             <figure class="entrylist__entry-image"><img src="./img/dist/gernot.jpg" alt="Teaser of Gernot Fahl from BILD.de">
               <figcaption class="entrylist__entry-image-caption">BILD.de, http://www.bild.de/short/sti-33338936.bild.html</figcaption>
             </figure>
-            <p class="entrylist__entry-description">Nominated for the 'Grimme Online Award 2014', this report tells a story about Gernot Fahl, who wants to receive euthanasia in Switzerland.</p>
+            <p class="entrylist__entry-description">Nominated for the 'Grimme Online Award 2014', this report tells a story about Gernot Fahl, who wanted to receive euthanasia in Switzerland.</p>
             <p></p>&#8627; More information about&nbsp;<a class="entrylist__entry-anchor" href="http://www.bild.de/storytelling/topics/storytelling/die-letzte-reise-des-gernot-fahl-33338936,la=de.bild.html" target="_blank">The last journey of Gernot Fahl at BILD.de</a>
           </li>
           <li class="entrylist__entry">
@@ -150,14 +155,14 @@
             <figure class="entrylist__entry-image"><img src="./img/dist/individualsynthese.jpg" alt="Screenshot of individualsynthese.de">
               <figcaption class="entrylist__entry-image-caption">http://individualsynthese.de</figcaption>
             </figure>
-            <p class="entrylist__entry-description">Design and implementation of a wordpress website, as well as an event manager plug-in which helps customers to apply for courses.</p>
+            <p class="entrylist__entry-description">Design and implementation of a wordpress website. An event manager plugin helps customers to apply for courses.</p>
             <p></p>&#8627; More information about&nbsp;<a class="entrylist__entry-anchor" href="http://individualsynthese.de/" target="_blank">Individualsynthese by Anja Parchmann</a>
           </li>
           <li class="entrylist__entry">
             <time class="entrylist__entry-date">2013</time>
             <h3 class="entrylist__entry-heading">LeadAward Symposium 2013</h3>
             <p class="entrylist__entry-description">Under the title 'IT’S A BATTLE, STUPID!', two teams have competed against each other during the LeadAwards. As the only web developer I had to implement a website within six hours and then present it. Three team members were responsible for the content and one was responsible for the layout.</p>
-            <p class="entrylist__entry-description">We had a lot of fun under the pressure of time. The result is now sadly offline.</p>
+            <p class="entrylist__entry-description">We had a lot of fun under the pressure of time. The result is unfortunately offline now.</p>
             <p></p>&#8627; More information about&nbsp;<a class="entrylist__entry-anchor" href="http://www.leadacademy.de/2013/symposium.html" target="_blank">LeadAward Symposium 2013</a>
           </li>
           <li class="entrylist__entry">

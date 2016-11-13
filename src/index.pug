@@ -12,7 +12,9 @@ html(lang='de')
         meta(name='robots', content='index,follow,noarchive')
 
         link(rel="stylesheet", href="css/main.css")
-        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:400,700")
+        link(rel="preload", href="https://fonts.googleapis.com/css?family=Open+Sans:400,700", as="style", onload="this.rel='stylesheet'")
+        noscript
+            link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:400,700")
 
         link(rel="shortcut icon", type="image/x-icon", href="img/favicon/favicon.ico")
         link(rel="apple-touch-icon", sizes="57x57", href="img/favicon/apple-icon-57x57.png")
