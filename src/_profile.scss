@@ -118,7 +118,7 @@
         font:  {
             family: map-get($font, heading);
             weight: 700;
-            size: 1.6em;
+            size: 2em;
         }
         &-sub {
             display: block;
@@ -126,7 +126,7 @@
             font:  {
                 family: map-get($font, text);
                 weight: 400;
-                size: .5em;
+                size: .35em;
             }
         }
     }

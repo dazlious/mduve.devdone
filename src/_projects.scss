@@ -9,7 +9,9 @@
         font:  {
             family: map-get($font, heading);
             weight: 700;
+            size: 1.8em;
         }
+        margin: (3*$gutter) 0 ($gutter) 0;
     }
     &__description  {
         text-align: justify;

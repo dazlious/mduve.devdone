@@ -51,7 +51,9 @@
             font:  {
                 family: map-get($font, heading);
                 weight: 700;
+                size: 1.5em;
             }
+            line-height: 1.2;
             margin: 0 0 $gutter 0;
             padding: 0;
         }
@@ -59,7 +61,7 @@
             margin: 0 0 $gutter 0;
             padding: 0;
             &-caption {
-                font-size: .8em;
+                font-size: .6em;
                 margin: ($gutter/2) 0 ($gutter) 0;
                 color: map-get($colors, medium);
                 &:before {
