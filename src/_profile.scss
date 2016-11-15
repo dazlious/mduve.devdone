@@ -1,0 +1,171 @@
+.profile {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    height: auto;
+    background: url("../img/dist/bg.png") repeat top left;
+    background-size: 25%;
+    margin-bottom: $gutter * 2;
+    &:before {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        content: "";
+        z-index: 0;
+        background: #fff;
+        border-top: 1px solid map-get($colors, light);
+    }
+    &__content {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: map-get($breakpoints, mid);
+        margin: 0 auto;
+        padding: 0 ($gutter*2);
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+    }
+    &--left,
+    &--right,
+    &--top,
+    &--bottom {
+        flex: 1 1 auto;
+    }
+    &--left {
+        display: flex;
+        height: auto;
+        margin-right: 0;
+        margin-top: (($header-height/5) - $gutter);
+        justify-content: center;
+    }
+    &--right {
+        display: flex;
+        flex-direction: column;
+    }
+    &--top,
+    &--bottom {
+        height: 100%;
+    }
+    &--bottom {
+        text-align: center;
+        order: 0;
+    }
+    &--top {
+        position: relative;
+        margin-top: 2*$gutter;
+        order: 1;
+    }
+    &__image {
+        box-sizing: content-box;
+        border-radius: 100%;
+        align-self: center;
+        margin: 0;
+        height: $header-height / 2;
+        border: $gutter solid map-get($colors, lightest);
+    }
+    &__list {
+        position: relative;
+        margin: 0 $gutter 0 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: center;
+        flex-direction: row-reverse;
+        &:after {
+            position: absolute;
+            content: "";
+            background: map-get($colors, lightest);
+            width: 100%;
+            height: $gutter;
+            bottom: 0;
+            border-top: 1px solid map-get($colors, light);
+        }
+        &-item {
+            display: flex;
+            flex: 0 1 auto;
+            color: map-get($colors, dark);
+            font-size: $social-icon-size;
+            cursor: pointer;
+            margin-left: $gutter;
+            transform: rotate(-12deg);
+            transform-origin: center;
+            transition: all .15s ease;
+            &:first-child {
+                margin-right: $gutter;
+            }
+            &:hover {
+                transform: rotate(-12deg) translateY(-$gutter/2);
+                color: map-get($colors, highlight);
+            }
+            a,
+            a:hover,
+            a:visited {
+                color: currentColor;
+                text-decoration: none;
+            }
+            span {
+                display: block;
+            }
+        }
+    }
+    &__heading {
+        margin: 0;
+        font:  {
+            family: map-get($font, heading);
+            weight: 700;
+            size: 1.6em;
+        }
+        &-sub {
+            display: block;
+            line-height: 1;
+            font:  {
+                family: map-get($font, text);
+                weight: 400;
+                size: .5em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, smaller)) {
+    .profile {
+        height: $header-height;
+        margin-bottom: 0;
+        &__content {
+            flex-direction: row;
+        }
+        &--left {
+            flex: 0 1 auto;
+            margin-top: 0;
+            margin-right: ($gutter*2);
+            height: $header-height;
+        }
+        &--bottom {
+            text-align: left;
+            order: 1;
+        }
+        &--top {
+            margin-top: -2px;
+            order: 0;
+            overflow: hidden;
+        }
+        &__list {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            margin: 0 $gutter (-$gutter) 0;
+            justify-content: flex-start;
+            &:after {
+                content: initial;
+            }
+            &-item {
+                color: map-get($colors, lightest);
+            }
+        }
+    }
+}

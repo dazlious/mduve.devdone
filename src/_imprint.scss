@@ -5,11 +5,12 @@
     text-align: center;
     background: map-get($colors, light);
     box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, .15);
-    font-family: map-get($font, family);
+    font-family: map-get($font, text);
     &__body {
         max-width: map-get($breakpoints, mid);
         min-width: 280px;
         margin: 0 auto;
+        width: 90%;
         &-text {
             font-size: .8em;
             margin-top: $gutter/2;
@@ -17,10 +18,18 @@
         &-heading {
             font-size: 1em;
             margin-bottom: $gutter/2;
+            font:  {
+                family: map-get($font, heading);
+                weight: 700;
+            }
         }
         &-main-heading {
             color: map-get($colors, dark);
             font-size: 1.6em;
+            font:  {
+                family: map-get($font, heading);
+                weight: 700;
+            }
         }
     }
 }

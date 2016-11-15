@@ -28,11 +28,8 @@ a:hover {
 }
 
 .wrapper {
-    margin: 0 auto;
-    padding: 0 ($gutter*2);
-    max-width: map-get($breakpoints, mid);
     font:  {
-        family: map-get($font, "family");
+        family: map-get($font, "text");
         weight: 400;
         size: 17px;
     }
@@ -40,6 +37,7 @@ a:hover {
 }
 
 @import "projects";
+@import "profile";
 @import "entrylist";
 @import "imprint";
 

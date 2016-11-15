@@ -41,8 +41,17 @@
             padding: 0;
             font-weight: 700;
             color: map-get($colors, highlight);
+            font:  {
+                family: map-get($font, heading);
+                weight: 700;
+                size: 1.2em;
+            }
         }
         &-heading {
+            font:  {
+                family: map-get($font, heading);
+                weight: 700;
+            }
             margin: 0 0 $gutter 0;
             padding: 0;
         }

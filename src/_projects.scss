@@ -1,5 +1,15 @@
 .projects {
+    margin: 0 auto;
+    padding: 0 ($gutter*2);
+    max-width: map-get($breakpoints, mid);
+    > p:first-child {
+        margin-top: 0;
+    }
     &__heading {
+        font:  {
+            family: map-get($font, heading);
+            weight: 700;
+        }
     }
     &__description  {
         margin-bottom: $gutter*2;

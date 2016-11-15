@@ -1,2 +1,42 @@
+-
+    var socials = [
+        {
+            icon: "github-square",
+            href: "http://github.com/dazlious/"
+        },
+        {
+            icon: "facebook-square",
+            href: "http://www.facebook.com/dazlious/"
+        },
+        {
+            icon: "twitter-square",
+            href: "https://twitter.com/gedankenlos2012/"
+        },
+        {
+            icon: "linkedin-square",
+            href: "https://www.linkedin.com/in/michael-duve"
+        },
+        {
+            icon: "xing-square",
+            href: "https://www.xing.com/profile/Michael_Duve"
+        },
+        {
+            icon: "youtube-square",
+            href: "https://www.youtube.com/c/dazlious"
+        }
+    ]
+
 header.profile
-    h2.profile__heading profile
+    div.profile__content
+        div.profile--left
+            img.profile__image(src="./img/dist/mduve.jpg", alt="Picture of Web Frontend Developer Michael Duve")
+        div.profile--right
+            div.profile--top
+                ul.profile__list
+                    each social in socials
+                        li.profile__list-item
+                            a.profile__list-item-icon(href=social.href, target="_blank")
+                                span(class="fa fa-" + social.icon)
+            div.profile--bottom
+                h1.profile__heading A developer's work
+                    span.profile__heading-sub by Michael Duve (dazlious)

@@ -10,7 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <meta name="format-detection" content="telephone=no">
     <meta name="robots" content="index,follow,noarchive">
-    <style>body{margin:0}body *{box-sizing:border-box}a{color:currentColor}.wrapper{margin:0 auto;padding:0 20px;max-width:768px;font-family:Open Sans,sans-serif;font-weight:400;font-size:17px;line-height:1.4}.projects__description{margin-bottom:20px}.entrylist{list-style:none;margin:40px 0 0;padding:0}.entrylist__entry{position:relative;margin:0 0 0 10px;padding:30px 0 60px 20px;border-left:2px solid #e5e6e6}.entrylist__entry:before{position:absolute;left:-16px;top:-15px;content:"";width:20px;height:20px;border-radius:100%;background-color:#fff;border:5px solid #14aa79}.entrylist__entry:after{margin-top:30px;content:"";border-bottom:1px solid #e5e6e6;display:block}.entrylist__entry>a{color:#14aa79}.entrylist__entry-date{position:absolute;left:20px;top:-12px;margin:0;padding:0;font-weight:700;color:#14aa79}.entrylist__entry-heading,.entrylist__entry-image{margin:0 0 10px;padding:0}.entrylist__entry-image img{display:block;width:100%;filter:saturate(.3)}.entrylist__entry-description{margin:0 0 10px;padding:0;text-align:justify}.entrylist__entry-anchor{margin-top:10px}</style>
+    <style>
+      <!--include ../css/crp.css-->
+    </style>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -31,11 +33,31 @@
   </head>
   <body>
     <main class="wrapper">
-      <h1>A Web Frontend Developer's work</h1>
       <header class="profile">
-        <h2 class="profile__heading">profile</h2>
+        <div class="profile__content">
+          <div class="profile--left"><img class="profile__image" src="./img/dist/mduve.jpg" alt="Picture of Web Frontend Developer Michael Duve"></div>
+          <div class="profile--right">
+            <div class="profile--top">
+              <ul class="profile__list">
+                <li class="profile__list-item"><a class="profile__list-item-icon" href="http://github.com/dazlious/" target="_blank"><span class="fa fa-github-square"></span></a></li>
+                <li class="profile__list-item"><a class="profile__list-item-icon" href="http://www.facebook.com/dazlious/" target="_blank"><span class="fa fa-facebook-square"></span></a></li>
+                <li class="profile__list-item"><a class="profile__list-item-icon" href="https://twitter.com/gedankenlos2012/" target="_blank"><span class="fa fa-twitter-square"></span></a></li>
+                <li class="profile__list-item"><a class="profile__list-item-icon" href="https://www.linkedin.com/in/michael-duve" target="_blank"><span class="fa fa-linkedin-square"></span></a></li>
+                <li class="profile__list-item"><a class="profile__list-item-icon" href="https://www.xing.com/profile/Michael_Duve" target="_blank"><span class="fa fa-xing-square"></span></a></li>
+                <li class="profile__list-item"><a class="profile__list-item-icon" href="https://www.youtube.com/c/dazlious" target="_blank"><span class="fa fa-youtube-square"></span></a></li>
+              </ul>
+            </div>
+            <div class="profile--bottom">
+              <h1 class="profile__heading">A developer's work<span class="profile__heading-sub">by Michael Duve (dazlious)</span></h1>
+            </div>
+          </div>
+        </div>
       </header>
       <article class="projects">
+        <p class="projects__description"></p>
+        Hello out there, I am Michael, a passionate software engineer who enjoys to create things from scratch. Currently, I am enrolled as student at the Beuth University Berlin in the Master Media Informatics
+        As part time worker I am currently employed at BILD Infographic &amp; Datavisualization as web frontend developer.
+        <p class="projects__description">I love trying different computer languages in various projects or layouting print and digital content, however my true love is located in web development, web design and computer graphics.</p>
         <h2 class="projects__heading">projects</h2>
         <p class="projects__description">Some projects are still under development, some are offline and some are deprecated by the time.</p>
         <ul class="entrylist">
@@ -208,7 +230,8 @@
           document.getElementsByTagName("head")[0].appendChild(link);
       }
       
-      loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+      loadCSS("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Open+Sans+Condensed:700");
+      loadCSS("fonts/font-awesome.min.css");
       loadCSS("css/main.css");
       
       // Analytics

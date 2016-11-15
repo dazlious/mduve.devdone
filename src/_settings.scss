@@ -1,8 +1,11 @@
 $timeline-thickness: 2px;
+$header-height: 250px;
 $gutter: 10px;
 $timeline-circle: 20px;
+$social-icon-size: 34px;
 $font: (
-    "family": ("Open Sans", sans-serif),
+    "text": ("Open Sans", sans-serif),
+    "heading": ("Open Sans Condensed", sans-serif),
     "size": 17px
 );
 $colors: (
@@ -13,5 +16,6 @@ $colors: (
     "highlight": #14aa79
 );
 $breakpoints: (
+    "smaller": 550px,
     "mid": 768px
 );
