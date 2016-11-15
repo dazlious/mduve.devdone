@@ -9,6 +9,10 @@ article.projects
         each project in projects
             li.entrylist__entry
                 time.entrylist__entry-date= project.date
+                ul.entrylist__entry-labels
+                    each label in project.labels
+                        li.entrylist__entry-labels-item
+                            p= label
                 h3.entrylist__entry-heading= project.name
                 if project.image
                     figure.entrylist__entry-image

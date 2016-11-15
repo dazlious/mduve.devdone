@@ -36,7 +36,7 @@
         &-date {
             position: absolute;
             left: (2*$gutter);
-            top: -($gutter + 2px);
+            top: -($gutter*1.5);
             margin: 0;
             padding: 0;
             font-weight: 700;
@@ -97,6 +97,27 @@
         }
         &-anchor {
             margin-top: $gutter;
+        }
+        &-labels {
+            position: absolute;
+            right: 0;
+            top: -($gutter*1.5 + 2px);
+            margin: 0;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: row;
+            &-item {
+                margin-left: $gutter;
+                background-color: map-get($colors, light);
+                padding: $gutter/2;
+                border-radius: $gutter/2;
+                color: map-get($colors, lightest);
+                p {
+                    margin: 0;
+                }
+            }
         }
     }
 }
