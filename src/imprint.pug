@@ -1,10 +1,13 @@
-footer.imprint
+footer.imprint.imprint--close
+    .imprint-toggle
     .imprint__body
         p.imprint__body-main-heading
             strong imprint
-
+            span
+                svg(version="1.1", id="imprint-close", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", x="0px", y="0px", viewBox="0 0 128 128", style="enable-background:new 0 0 128 128;", xml:space="preserve")
+                    g
+                        path(style="fill:#424242;", d="M125.2,16.5c1.6-1.6,1.6-4.1,0-5.7l-8-8c-1.6-1.6-4.1-1.6-5.7,0L66.8,47.5c-1.6,1.6-4.1,1.6-5.7,0L16.5,2.8c-1.6-1.6-4.1-1.6-5.7,0l-8,8c-1.6,1.6-1.6,4.1,0,5.7l44.7,44.7c1.6,1.6,1.6,4.1,0,5.7L2.8,111.5c-1.6,1.6-1.6,4.1,0,5.7l8,8c1.6,1.6,4.1,1.6,5.7,0l44.7-44.7c1.6-1.6,4.1-1.6,5.7,0l44.7,44.7c1.6,1.6,4.1,1.6,5.7,0l8-8c1.6-1.6,1.6-4.1,0-5.7L80.5,66.8c-1.6-1.6-1.6-4.1,0-5.7L125.2,16.5z")
         p.imprint__body-text Angaben gemäß § 5 TMG
-
         .imprint__body-vcard.vcard
             span.fn Michael Duve,&nbsp;
             a.email(href="mailto:mduve@designmail.net") mduve@designmail.net

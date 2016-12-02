@@ -33,6 +33,22 @@
         > a {
             color: map-get($colors, highlight);
         }
+        &-technologies {
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: row;
+            list-style: none;
+            padding: 0;
+            flex-wrap: wrap;
+            &-item {
+                margin: $gutter $gutter 0 0;
+                background-color: map-get($colors, medium);
+                padding: $gutter/2 $gutter;
+                border-radius: $gutter/2;
+                color: map-get($colors, lightest);
+                font-size: .8em;
+            }
+        }
         &-date {
             position: absolute;
             left: (2*$gutter);
