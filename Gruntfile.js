@@ -67,7 +67,7 @@ module.exports = function(grunt) {
             crp: {
                 outfile: './css/crp.css',
                 css: './css/main.css',
-                url: 'http://localhost',
+                url: 'http://localhost:1337',
                 width: 820,
                 height: 900,
                 skipErrors: false

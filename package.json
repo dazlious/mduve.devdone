@@ -5,9 +5,16 @@
   "email": "mduve@designmail.net",
   "description": "work of Michael Duve",
   "homepage": "http://mduve.de",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/dazlious/mduve.devdone"
+  },
+  "scripts": {
+    "postinstall": "sudo gem install sass",
+    "start": "grunt dev",
+    "watch": "grunt dev",
+    "build": "concurrently \"http-server ./ -p 1337\" \"grunt ship\""
   },
   "keywords": [
     "webdesign",
@@ -21,6 +28,7 @@
   },
   "devDependencies": {
     "autoprefixer": "6.4.1",
+    "concurrently": "^3.5.1",
     "cssnano": "3.8.0",
     "grunt": "1.0.1",
     "grunt-contrib-imagemin": "1.0.1",
@@ -29,7 +37,8 @@
     "grunt-contrib-watch": "1.0.0",
     "grunt-newer": "1.2.0",
     "grunt-penthouse": "0.3.0",
-    "grunt-postcss": "0.8.0"
+    "grunt-postcss": "0.8.0",
+    "http-server": "^0.11.1"
   },
   "dependencies": {}
 }
