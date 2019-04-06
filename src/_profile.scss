@@ -80,21 +80,27 @@
             content: "";
             background: map-get($colors, lightest);
             width: 100%;
-            height: $gutter;
-            bottom: 0;
+            height: $gutter * 1.5;
+            bottom: -$gutter/2;
             left: 0;
             border-top: 1px solid map-get($colors, light);
         }
         &-item {
             display: flex;
             flex: 0 1 auto;
-            color: map-get($colors, dark);
+            color: map-get($colors, lightest);
             font-size: $social-icon-size;
             cursor: pointer;
             margin-left: $gutter;
             transform: rotate(-12deg);
             transform-origin: center;
             transition: all .15s ease;
+            background: map-get($colors, dark);
+            width: $social-icon-size + ($gutter);
+            height: $social-icon-size + ($gutter);
+            border-radius: $gutter;
+            justify-content: center;
+            align-items: center;
             &:first-child {
                 margin-right: $gutter;
             }
@@ -109,7 +115,7 @@
                 text-decoration: none;
             }
             span {
-                display: block;
+                display: flex;
             }
         }
     }
@@ -165,7 +171,8 @@
                 content: initial;
             }
             &-item {
-                color: map-get($colors, lightest);
+                background: map-get($colors, lightest);
+                color: map-get($colors, dark);
             }
         }
     }
