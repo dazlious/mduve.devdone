@@ -11,8 +11,6 @@ html(lang='de')
         meta(name='format-detection', content='telephone=no')
         meta(name='robots', content='index,follow,noarchive')
 
-        link(rel="preconnect", href="https://fonts.googleapis.com")
-        link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
         style
             include ../css/crp.css
 
@@ -41,8 +39,9 @@ html(lang='de')
         meta(property="og:description", content="I am frontend developer specialized in HTML5, (S)CSS, JavaScript (ES5/ES6), NodeJS and Responsive Webdesign with more than 6 years work experience.")
         meta(property="og:image", content="https://mduve.devdone.de/img/favicon/fb-logo.jpg")
 
+        link(rel="stylesheet", href="node_modules/lite-youtube-embed/src/lite-yt-embed.css")
+
         noscript
-            link(rel="stylesheet", type="text/css", media="screen,print", href="https://fonts.googleapis.com/css?family=Open+Sans:400|Open+Sans+Condensed:700")
             link(rel="stylesheet", type="text/css", media="screen,print", href="fonts/font-awesome.min.css")
             link(rel="stylesheet", type="text/css", media="screen,print", href="css/main.css")
 
@@ -53,3 +52,4 @@ html(lang='de')
         include imprint
 
         script(src="js/app.js")
+        script(src="node_modules/lite-youtube-embed/src/lite-yt-embed.js")

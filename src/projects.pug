@@ -26,7 +26,8 @@ article.projects
                     p.entrylist__entry-description= description
                 if project.video
                     div.entrylist__entry-video(style="padding-bottom: " + project.video.height/project.video.width*100 + "%;")
-                        iframe(src=project.video.url)
+                        lite-youtube(videoid=project.video.id)
+                        //- iframe(src=project.video.url)
                 if project.anchor
                     p
                         | &#8627; More information about&nbsp;

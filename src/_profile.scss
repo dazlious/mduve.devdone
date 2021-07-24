@@ -121,6 +121,7 @@
     }
     &__heading {
         margin: 0;
+        letter-spacing: -1.2px;
         font:  {
             family: map-get($font, heading);
             weight: 700;
@@ -129,6 +130,7 @@
         &-sub {
             display: block;
             line-height: 1;
+            letter-spacing: normal;
             font:  {
                 family: map-get($font, text);
                 weight: 400;

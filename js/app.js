@@ -5,7 +5,6 @@
 
     var headTag = document.getElementsByTagName("head")[0],
         cssToBeLoaded = [
-            "https://fonts.googleapis.com/css?family=Open+Sans:400|Open+Sans+Condensed:700",
             "fonts/font-awesome.min.css",
             "css/main.css"
         ],
