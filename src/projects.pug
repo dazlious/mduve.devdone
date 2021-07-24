@@ -1,10 +1,10 @@
 include entries
 
 article.projects
-    p.projects__description Hello out there, I am Michael, a passionate software engineer who enjoys creating things from scratch. Currently, I am full time employed at Highsnobiety as web frontend developer.
-    p.projects__description I enjoy to try different computer languages in various projects or layouting print and digital content, however my true love and passion lies in web development, web design and computer graphics.
+    p.projects__description Hello out there, I am Michael, a software engineer who is passionate about optimizing and creating web applications. Currently, I am full time employed at Highsnobiety as a senior software engineer.
+    p.projects__description I enjoy trying various languages and tools in projects or layouting print and digital content, however my true love and passion lies in web development with JavaScript.
     h2.projects__heading projects
-    p.projects__description Please be aware that some projects may be still under development, offline and/or deprecated by time.
+    p.projects__description Please be aware that some projects may still be under development, offline and/or deprecated by time.
     p.projects__description
         | If you like this site, feel free to&nbsp;
         a(href="https://github.com/dazlious/mduve.devdone", target="_blank") visit this project on Github.
@@ -19,7 +19,7 @@ article.projects
                 h3.entrylist__entry-heading= project.name
                 if project.image
                     figure.entrylist__entry-image
-                        img(src=project.image.url, alt=project.image.altText)
+                        img(src=project.image.url, alt=project.image.altText, loading="lazy")
                         if project.image.source
                             figcaption.entrylist__entry-image-caption= project.image.source
                 each description in project.description
